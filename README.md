@@ -1,5 +1,11 @@
 # LeetCode Practice
 
+## Introduction
+Leetcode practice targeted on specific class of data structure or algorithm.
+
+## Reference
+https://turingplanet.org/leetcode%e5%88%b7%e9%a2%98%e7%b3%bb%e5%88%97/
+
 ## Index
 
 1. [array/index](array/index.md)

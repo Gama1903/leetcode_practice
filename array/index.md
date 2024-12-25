@@ -1,5 +1,9 @@
 # Array
 
+## Introduction
+1. Two pointers in same direction
+2. Two pointers in opposite direction
+
 ## Index
 
 1. [344_reverse_string](344_reverse_string.cpp)
