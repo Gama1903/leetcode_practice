@@ -1,7 +1,7 @@
 # Array
 
 ## Introduction
-1. Two pointers in same direction
+1. Two pointers in same direction (Fast-Slow Pointers Approach)
 2. Two pointers in opposite direction
 
 ## Index
