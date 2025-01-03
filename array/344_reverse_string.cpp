@@ -1,21 +1,26 @@
 #include <iostream>
 #include <vector>
 
-// Two pointers in opposite direction
-void solution(std::vector<char> &s)
+class Solution
 {
-    int i = 0, j = s.size() - 1;
-    while (i < j)
+public:
+    // Two pointers in opposite direction
+    void reverseString(std::vector<char> &s)
     {
-        std::swap(s[i++], s[j--]);
+        int i = 0, j = s.size() - 1;
+        while (i < j)
+        {
+            std::swap(s[i++], s[j--]);
+        }
     }
-}
+};
 
 // Simple test
 int main()
 {
     std::vector<char> s = {'h', 'e', 'l', 'l', 'o'};
-    solution(s);
+    Solution sol;
+    sol.reverseString(s);
     for (auto c : s)
     {
         std::cout << c << " ";

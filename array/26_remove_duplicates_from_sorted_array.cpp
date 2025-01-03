@@ -1,29 +1,34 @@
 #include <iostream>
 #include <vector>
 
-// Two pointers in same direction (Fast-Slow Pointers Approach)
-int solution(std::vector<int> &a)
+class Solution
 {
-    int i = 0, j = 1;
-    while (j < a.size())
+public:
+    // Two pointers in same direction
+    int removeDuplicates(std::vector<int> &nums)
     {
-        if (a[i] != a[j])
+        int i = 0, j = 1;
+        while (j < nums.size())
         {
-            i++;
-            a[i] = a[j];
+            if (nums[i] != nums[j])
+            {
+                i++;
+                nums[i] = nums[j];
+            }
+            j++;
         }
-        j++;
+        return i + 1;
     }
-    return i + 1;
-}
+};
 
 // Simple test
 int main()
 {
-    std::vector<int> a = {1, 1, 2, 2, 3, 4, 4, 5, 5, 6, 6, 6};
-    int len = solution(a);
+    std::vector<int> nums = {1, 1, 2, 2, 3, 4, 4, 5, 5, 6, 6, 6};
+    Solution sol;
+    int len = sol.removeDuplicates(nums);
     for (int i = 0; i < len; i++)
-        std::cout << a[i] << " ";
+        std::cout << nums[i] << " ";
     std::cout << std::endl;
     return 0;
 }
